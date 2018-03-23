@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	min-width: 1024px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+a img {
+	border: none;
+	outline: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-family: "微软雅黑";
+}
+ul li {
+	display: block;
+	float: left;
+}
+a, p {
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+a {
+	cursor: pointer;
+}
+p, h1, h2, h3, h4, h5 {
+	display: block;
+	color: #f5f5f5;
+	font-weight: normal;
+}
+span.white {
+	zoom: 1;
+	text-shadow: 1px 1px 0 #fff;
+}
+.en {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0;
+}
+.bold {
+	font-weight: bold;
+}
+.cn {
+	font-family: "微软雅黑";
+}
+.dark {
+	color: #3a4348;
+}
+.light {
+	color: #ccc9c8;
+}
+.bakg-xin {
+	background-color: #6fbcdd;
+}
+.bakg-tian {
+	background-color: #a5cd7b;
+}
+.bakg-ya {
+	background-color: #ffc572;
+}
+.bakg-dan {
+	background-color: #f66a7e;
+}
+.bakg-jing {
+	background-color: #ac9fdb;
+}
+.orange {
+	color: #f25b26;
+}
+.blue {
+	color: #3e94b9;
+}
+.grey {
+	color: #ccc9c8;
+}
+.x1 {
+	font-size: 16px;
+}
+.x2 {
+	font-size: 14px;
+}
+.x3 {
+	font-size: 12px;
+}
+a {
+	text-align: center;
+	color: #333;
+	font-size: 12px;
+}
+input {
+	display: block;
+	outline: none;
+}
+.clear {
+	clear: both;
+	float: none;
+}
+/* weakTip */
+p.weakTip {
+	display: none;
+	position: absolute;
+	width: 200px;
+	min-height: 24px;
+	line-height: 24px;
+	padding: 26px 50px;
+	background: url(../img/weakTipBack.png) repeat;
+	border-radius: 10px;/* except IE */
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	left: 0;
+	top: 0;
+	z-index: 5000;
+}
+/* controler */
+.topnav {
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+}
+i {
+	font-size: 14px;
+	margin-right: 5px;
+}
+.navframe {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+.navframe p.title {
+	min-width: 200px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	padding-left: 24px;
+	background: url(../img/favicon.png) no-repeat left center;
+	background-size:20px 20px;
+	letter-spacing: 1px;
+}
+.copyright {
+	min-width: 400px;
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	text-align: right;
+	font-size: 12px;
+	color: #999;
+}
+.mainnav {
+	width: 1000px;
+	min-height: 520px;
+	margin: 0 auto;
+	padding: 70px 12px 0;
+	/*background: url(../img/bg1.png) no-repeat -360px bottom;*/
+	
+}
+.mainnav ul {
+	width: 200px;
+	float: right;
+	margin-left: 40px;
+}
+.mainnav ul li {
+	float: none;
+	height: 40px;
+}
+.mainnav ul li.linktitle {
+	height: 60px;
+	padding-left: 10px;
+	font-size: 24px;
+}
+.mainnav ul li a {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 14px;
+}
+.mainnav ul li a i{
+	display:none;
+}
+.mainnav ul li a:hover {
+	-webkit-animation-name: 'linkhover';
+	-webkit-animation-duration: 500ms;
+	color: #f5f5f5;
+ 	background-color:rgba(0,0,0,0.5);
+}
+.iconstyle{
+	width:360px;
+	height:360px;
+	position:absolute;
+	margin-left:-360px;
+	margin-top:160px;
+	opacity:0;
+}
+/* loanbutton animator */
+@-webkit-keyframes 'linkhover' {
+ from {
+ background-color:transparent;
+ color:#333;
+}
+ to {
+ background-color:rgba(0,0,0,0.5);
+ color:#f5f5f5;
+}
+}
