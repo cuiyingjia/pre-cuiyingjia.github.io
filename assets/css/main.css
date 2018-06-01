@@ -3978,6 +3978,7 @@
 	}
 
 		#menu ul a, #menu ul span {
+			-webkit-tap-highlight-color:transparent;
 			border-bottom: 0;
 			color: inherit;
 			cursor: pointer;
