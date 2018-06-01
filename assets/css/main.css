@@ -2109,6 +2109,7 @@
 		border-bottom: dotted 1px;
 		color: #f56a6a;
 		text-decoration: none;
+		-webkit-tap-highlight-color:transparent;
 	}
 
 		a:hover {
