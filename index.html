@@ -38,7 +38,7 @@
 							<h2>Menu</h2>
 						</header>
 						<ul>
-							<li><a href="index.html">Homepage</a></li>
+							<li id="homepage"><a href="/index.html">Homepage</a></li>
 							<li id="generic" class="content-toggle"><a href="#">Generic</a></li>
 							<li id="elements" class="content-toggle"><a href="#">Elements</a></li>
 							<li>
@@ -113,6 +113,7 @@
 	</body>
 	 <script type="text/javascript">
          $(document).ready(function(){
+             $("#homepage").css("color","#1195dacc");
              $("#header").load("/pages/header.html");
              $("#content").load("/pages/home.html");
          });
@@ -123,6 +124,9 @@
 			// $("#sidebar").removeClass('active');
 			$("#sidebar").toggleClass('inactive');
             scrollTo(0,0);
+            $("#homepage").css("color","");
+            $(".content-toggle").css("color","");
+            $("#"+$name).css("color","#1195dacc");
         });
 	</script>
 </html>
