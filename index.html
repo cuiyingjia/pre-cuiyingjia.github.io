@@ -44,10 +44,10 @@
 							<li>
 								<span class="opener">Simple Think</span>
 								<ul>
-									<li><a href="#">Lorem Dolor</a></li>
-									<li><a href="#">Ipsum Adipiscing</a></li>
-									<li><a href="#">Tempus Magna</a></li>
-									<li><a href="#">Feugiat Veroeros</a></li>
+									<li><a href="#">Sorry</a></li>
+									<li><a href="#">There is</a></li>
+									<li><a href="#">Nothing </a></li>
+									<li><a href="#">But placeholders</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -56,24 +56,28 @@
 				<!-- Section -->
 					<section>
 						<header class="major">
-							<h2>Ante interdum</h2>
+							<h2>Movie Galaxy</h2>
 						</header>
 						<div class="mini-posts">
 							<article>
-								<a href="#" class="image"><img src="/images/pic07.jpg" alt="" /></a>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+								<a href="#" class="image"><img src="/images/yaxis/dp202.jpg" alt="" /></a>
+								<p>I am a placeholder</p>
 							</article>
 							<article>
-								<a href="#" class="image"><img src="/images/pic08.jpg" alt="" /></a>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+								<a href="#" class="image"><img src="/images/zaxis/infinitewars01.gif" alt="" /></a>
+								<p>I'm a placeholder too</p>
 							</article>
 							<article>
-								<a href="#" class="image"><img src="/images/pic09.jpg" alt="" /></a>
-								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+								<a href="#" class="image"><img src="/images/zaxis/infinitewars02.gif" alt="" /></a>
+								<p>I am also a placeholder</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="/images/zaxis/westworld02.gif" alt="" /></a>
+								<p>I'm definitely a placeholder</p>
 							</article>
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">More</a></li>
+							<li><a href="#" class="button disabled">More</a></li>
 						</ul>
 					</section>
 
@@ -116,8 +120,9 @@
 		    // console.log($(this).attr("id"));
 			var $name = $(this).attr("id");
 			$("#content").load("/pages/"+$name+".html");
-			$("#sidebar").removeClass('active');
+			// $("#sidebar").removeClass('active');
 			$("#sidebar").toggleClass('inactive');
+            scrollTo(0,0);
         });
 	</script>
 </html>
