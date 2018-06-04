@@ -7,7 +7,7 @@ aj@lkn.io | @ajlkn
 
 Credits:
 
-	Prototype：
+	Prototype:
 		https://html5up.net/editorial
 	Demo Images:
 		Unsplash (unsplash.com)
