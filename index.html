@@ -4,10 +4,11 @@
 		<title>CuiYingjia's Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/jquery-confirm.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -39,6 +40,24 @@
 						</header>
 						<ul>
 							<li id="homepage"><a href="/index.html">Homepage</a></li>
+							<li id="comics" onclick="comsoon();"><a href="#">Comics</a></li>
+							<script type="application/javascript">
+                                var comsoon = function () {
+                                    $.alert({
+                                        title: 'Don\'t Panic',
+                                        content: ' <br> COMICS coming <em> SOON</em>',
+                                        icon: 'fa fa-paper-plane',
+                                        animation: 'scale',
+                                        closeAnimation: 'zoom',
+                                        buttons: {
+                                            okay: {
+                                                text: 'Okay',
+                                                btnClass: 'btn-white'
+                                            }
+                                        }
+                                    });
+                                }
+							</script>
 							<li id="generic" class="content-toggle"><a href="#">Generic</a></li>
 							<li id="elements" class="content-toggle"><a href="#">Elements</a></li>
 							<li>
@@ -105,6 +124,7 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery-confirm.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
